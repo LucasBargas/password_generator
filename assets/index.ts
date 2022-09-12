@@ -1,4 +1,3 @@
-// Seleção de Elementos
 const generatePasswordButton = document.querySelector(
   '#generate-password',
 ) as HTMLDivElement;

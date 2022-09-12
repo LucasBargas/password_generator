@@ -1,5 +1,4 @@
 "use strict";
-// Seleção de Elementos
 const generatePasswordButton = document.querySelector('#generate-password');
 const generatedPasswordElement = document.querySelector('#generated-password');
 const generatedPasswordElementTitle = generatedPasswordElement.querySelector('h4');
