@@ -6,6 +6,14 @@
   color: #333333;
 }
 
+html {
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
 html body {
   background: linear-gradient(180deg, #ea03ff 0%, #0099ff 100%);
   height: auto;
@@ -19,11 +27,17 @@ html body .hide {
 }
 
 #register-container {
-  max-width: 900px;
+  max-width: 1000px;
   min-height: 80vh;
   margin: 2rem auto;
+  padding: 0 1.5rem;
   display: flex;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+@media (max-width: 1000px) {
+  #register-container {
+    justify-content: center;
+  }
 }
 #register-container #register-banner {
   background: url("../../images/bg-form.jpg");
@@ -44,12 +58,27 @@ html body .hide {
   color: #ffffff;
   word-spacing: 50rem;
 }
+@media (max-width: 1000px) {
+  #register-container #register-banner {
+    display: none;
+  }
+}
 #register-container #register-form {
   background-color: #ffffff;
   padding: 2rem;
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1000px) {
+  #register-container #register-form {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  #register-container #register-form {
+    padding: 1.5rem;
+  }
 }
 #register-container #register-form h2 {
   text-align: center;

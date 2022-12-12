@@ -9,6 +9,12 @@
 }
 
 html {
+  font-size: 16px;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+
   body {
     background: linear-gradient(180deg, variables.$purple-color 0%, variables.$blue-sky 100%);
     height: auto;
@@ -25,12 +31,17 @@ html {
 }
 
 #register-container {
-  max-width: 900px;
+  max-width: 1000px;
   min-height: 80vh;
   margin: 2rem auto;
+  padding: 0 1.5rem;
   display: flex;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+  }
 
   #register-banner {
     background: url('../../images/bg-form.jpg');
@@ -52,6 +63,10 @@ html {
         word-spacing: 50rem;
       }
     }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 
   #register-form {
@@ -60,6 +75,14 @@ html {
     width: 50%;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+
+    @media (max-width: 1000px) {
+      padding: 1.5rem;
+    }
 
     h2 {
       text-align: center;
