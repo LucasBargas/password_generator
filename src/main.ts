@@ -1,3 +1,3 @@
-import form from "./form";
+import form from './form';
 
 form();
